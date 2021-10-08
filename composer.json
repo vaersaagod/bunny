@@ -1,0 +1,41 @@
+{
+  "name": "vaersaagod/bunny",
+  "description": "Bunny CDN integration for Craft CMS.",
+  "type": "craft-plugin",
+  "version": "1.0.0",
+  "keywords": [
+    "craft",
+    "cms",
+    "craftcms",
+    "craft-plugin",
+    "bunny"
+  ],
+  "support": {
+    "docs": "https://github.com/vaersaagod/bunny/blob/master/README.md",
+    "issues": "https://github.com/vaersaagod/bunny/issues"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Værsågod AS",
+      "homepage": "https://vaersaagod.no"
+    }
+  ],
+  "require": {
+    "craftcms/cms": "^3.7.16"
+  },
+  "autoload": {
+    "psr-4": {
+      "vaersaagod\\bunny\\": "src/"
+    }
+  },
+  "extra": {
+    "name": "Bunny",
+    "handle": "bunny",
+    "developer": "Værsågod AS",
+    "developerUrl": "https://vaersaagod.no",
+    "documentationUrl": "https://github.com/vaersaagod/bunny/blob/master/README.md",
+    "changelogUrl": "https://raw.githubusercontent.com/vaersaagod/bunny/master/CHANGELOG.md",
+    "class": "vaersaagod\\bunny\\Bunny"
+  }
+}
