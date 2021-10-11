@@ -1,10 +1,12 @@
 <?php
 
 return [
-    'pullzones' => [
+    'pullingEnabled' => true,
+    'pullZones' => [
         'default' => [
-            'hostname' => 'https://yourpullzone.b-cdn.net',
+            'hostname' => '',//https://yourpullzone.b-cdn.net',
             'enabled' => true,
         ],
     ],
+    'defaultPullZone' => 'default',
 ];

@@ -4,6 +4,12 @@ namespace vaersaagod\bunny;
 
 use Craft;
 use craft\base\Plugin;
+use craft\services\Plugins;
+
+use vaersaagod\bunny\models\Settings;
+use vaersaagod\bunny\web\twig\Extension;
+
+use yii\base\Event;
 
 class Bunny extends Plugin
 {
@@ -28,6 +34,9 @@ class Bunny extends Plugin
     {
         parent::init();
 
+        // Add in our Twig extensions
+        Craft::$app->getView()->registerTwigExtension(new Extension());
+
         Craft::info(
             Craft::t(
                 'bunny',
@@ -36,6 +45,22 @@ class Bunny extends Plugin
             ),
             __METHOD__
         );
+    }
+
+    /**
+     * @return Settings
+     */
+    public function getSettings(): Settings
+    {
+        return parent::getSettings();
+    }
+
+    /**
+     * @return Settings
+     */
+    protected function createSettingsModel(): Settings
+    {
+        return new Settings();
     }
 
 }

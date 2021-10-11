@@ -1,13 +1,19 @@
 <?php
 
-namespace vaersaagod\models;
+namespace vaersaagod\bunny\models;
 
 use craft\base\Model;
 
 class Settings extends Model
 {
 
-    /** @var array */
-    public $pullzones = [];
+    /** @var bool */
+    public $pullingEnabled = true;
+
+    /** @var array[] */
+    public $pullZones = [];
+
+    /** @var string */
+    public $defaultPullZone;
 
 }
