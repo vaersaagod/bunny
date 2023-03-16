@@ -2,7 +2,7 @@
 
 ## Requirements
 
-This plugin requires Craft CMS 3.7.16 or later.
+This plugin requires Craft CMS 4.0.0 or later.
 
 ## Installation
 
@@ -28,4 +28,4 @@ is given. Submitted issues are resolved if it scratches an itch.
 See [CHANGELOG.MD](https://raw.githubusercontent.com/vaersaagod/bunny/master/CHANGELOG.md).
 
 
-Brought to you by [Værsågod AS](https://vaersaagod.no)
+Brought to you by [Værsågod](https://vaersaagod.no)
