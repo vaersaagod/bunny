@@ -1,4 +1,4 @@
-# Bunny plugin for Craft CMS 3.x
+# Bunny plugin for Craft CMS 4.x
 
 ## Requirements
 
@@ -17,6 +17,30 @@ To install the plugin, follow these instructions.
         composer require vaersaagod/bunny
 
 3. In the Control Panel, go to Settings → Plugins and click the “Install” button for Bunny.
+
+## Configuration
+
+```
+<?php
+
+return [
+    'pullingEnabled' => true,
+    'pullZones' => [
+        'default' => [
+            'hostname' => 'https://snohetta.b-cdn.net',
+            'enabled' => true,
+        ],
+    ],
+    'defaultPullZone' => 'default',
+];
+```
+
+## Usage
+
+```
+{{ bunnyPullUrl('/lorem/ipsum') }}
+{{ bunnyPullUrl('/lorem/ipsum', 'anotherZone') }}
+```
 
 ## Price, license and support
 
